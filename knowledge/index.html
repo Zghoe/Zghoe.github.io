@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#07090c">
+<title>Knowledge Base — Mohammad Zghoul</title>
+<meta name="description" content="A filterable explorer of 581 cybersecurity skills, tools, standards and techniques across two terms of the Algonquin Cyber Security Analysis program — from threat intelligence to digital forensics and incident response.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+<div class="bg-grid"></div><div class="bg-glow"></div><div class="bg-scan"></div>
+
+<header class="hdr">
+  <div class="container hdr__in">
+    <a href="../" class="brand">Zghoul<b>@</b>sec<span class="cur"></span></a>
+    <nav class="nav" id="nav">
+      <a href="../#journey">Journey</a>
+      <a href="../#capabilities">Capabilities</a>
+      <a href="../#reports">Field Reports</a>
+      <a href="../#coursework">Coursework</a>
+      <a href="./" style="color:var(--acc)">Knowledge Base</a>
+      <a href="../#contact">Contact</a>
+    </nav>
+    <div class="hdr__cta">
+      <button class="cmdk-btn" data-focus-search><span>Search</span> <span class="kbd">⌘K</span></button>
+      <button class="navtog" data-navtog>[≡]</button>
+    </div>
+  </div>
+</header>
+
+<section class="sec-tight">
+  <div class="container">
+    <a href="../" class="backlink">← back to portfolio</a>
+    <div class="kb-head">
+      <div>
+        <p class="kicker">Knowledge base</p>
+        <h1 class="h-sec" style="margin-bottom:8px">Everything I've actually used</h1>
+        <p class="sec-lead">Every tool, concept, standard, algorithm and technique from the Cyber Security Analysis (Co-op) program — organised, filterable, cross-referenced. Two terms, one searchable index.</p>
+      </div>
+    </div>
+    <div class="kb-stats" style="margin-top:18px">
+      <span class="kb-stat"><b id="stTotal">581</b> items</span>
+      <span class="kb-stat"><b id="stDom">12</b> domains</span>
+      <span class="kb-stat"><b id="stT1">485</b> Term 1</span>
+      <span class="kb-stat"><b id="stT2">96</b> Term 2</span>
+    </div>
+
+    <div class="kb-search">
+      <span class="pfx">⌕</span>
+      <input type="search" id="kbSearch" placeholder="Search by name, description, or domain…  (try: nmap, BIA, X.509, SIEM)" autocomplete="off" spellcheck="false">
+    </div>
+
+    <div class="kb-facets">
+      <div class="kb-facet"><span class="fl">Term</span>
+        <button class="fchip on" data-term="all">All</button>
+        <button class="fchip" data-term="1">Term 1 <span class="c">· Winter</span></button>
+        <button class="fchip" data-term="2">Term 2 <span class="c">· Summer</span></button>
+      </div>
+      <div class="kb-facet" id="domFacet"><span class="fl">Domain</span></div>
+      <div class="kb-facet" id="typeFacet"><span class="fl">Type</span></div>
+    </div>
+
+    <div class="kb-count" id="kbCount"></div>
+    <div class="kb-grid" id="kbGrid"></div>
+    <div class="kb-empty" id="kbEmpty" hidden>No items match those filters. <button class="course__toggle" data-reset>reset filters</button></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="container foot__in">
+    <div class="foot__links">
+      <a href="../">Home</a>
+      <a href="mailto:moha.zghoul@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/mohammadzghoul777" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Zghoe" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <div class="foot__meta">// 581 items · 2 terms · © 2026 Mohammad Zghoul</div>
+  </div>
+</footer>
+
+<script src="../assets/js/knowledge.js" defer></script>
+</body>
+</html>

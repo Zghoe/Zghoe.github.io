@@ -1,0 +1,13 @@
+# OS / sync cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# LibreOffice / Office temp + lock artifacts (created by OneDrive/soffice)
+*.tmp
+.~lock.*#
+~$*
+
+# Dev-only build helpers (optional to keep)
+# _build/
